@@ -20,16 +20,9 @@ export const ContadorItem = ({ stock, inicial, onAdd }) => {
             <div className="row">
                 <div className="col">
                     <button className='btn btn-primary' onClick={decrement}> - </button>
-                </div>
-                <div className="col">
-                    <h4>{cantidad}</h4>
-                </div>
-                <div className="col">
+                    <button className='btn btn-primary' onClick={() => onAdd(cantidad)} disabled = {cantidad===0} >Agregar {cantidad} al carrito</button>
                     <button className='btn btn-primary' onClick={increment}> + </button>
                 </div>
-            </div>
-            <div>
-                <button className='btn btn-primary' onClick={() => onAdd(cantidad)} disabled = {!stock} >Agregar al carrito</button>
             </div>
         </div>
     )

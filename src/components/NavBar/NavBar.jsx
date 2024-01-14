@@ -6,9 +6,9 @@ export const NavBar = () => {
         <nav className='text-center' >
             <h1 className= {classes.logo} >e-commerce</h1>
             <section>
-                <button className='btn btn-primary' > celulares </button>
-                <button className='btn btn-success'> tablets </button>
-                <button className='btn btn-warning'> accesorios </button>
+                <button className='btn btn-primary' > Producto 1 </button>
+                <button className='btn btn-success'> Producto 2 </button>
+                <button className='btn btn-warning'> Producto 3 </button>
             </section>
             <Carrito/>
         </nav>

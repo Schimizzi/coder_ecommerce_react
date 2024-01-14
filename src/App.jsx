@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <NavBar />
-      <ItemListContainer greeting={'Compren!!'}/>
+      <ItemListContainer greeting={'Solo por Hoy!!'}/>
       <ContadorItem inicial={0} stock={10} onAdd={(cantidad) => console.log(cantidad)} />
     </>
   )

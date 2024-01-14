@@ -6,7 +6,7 @@ export const Carrito = () => {
     return(
         <div>
             <img className= {classes.carritocss} src={florCarrito} alt='florCarrito'/>
-            0 items
+            10 items
         </div>
     )
 };

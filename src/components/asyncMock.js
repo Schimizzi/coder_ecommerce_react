@@ -9,6 +9,8 @@ const products = [
         description:'Descripcion de Iphone 12'
     }
 ];
+
+
     
 export const getProducts = () => {
     return new Promise((resolve) => {
