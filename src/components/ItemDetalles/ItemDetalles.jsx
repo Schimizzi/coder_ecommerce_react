@@ -13,13 +13,13 @@ export const ItemDetalles = () => {
         .then(response => {
             setProductos(response)
         })
-    }, [])
+    }, [productId])
 
     return (
         <div className="text-center">
-            <h1> detalles del producto</h1>
+            <h1> detalles del producto </h1>
             <h2> {productos?.name} </h2>
-            <img src={productos?.img} style={{width: 100}} />
+            <img src={productos?.img} style={{width: 300}} />
             <ContadorItem inicial={0} stock={10} onAdd={(cantidad) => console.log(cantidad)} />
         </div>
     )

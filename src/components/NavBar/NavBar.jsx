@@ -7,10 +7,10 @@ export const NavBar = () => {
         <nav className='text-center' >
             <Link className= {classes.logo} to={'/'}>e-commerce</Link>
             <section>
-                <Link className='btn btn-primary' to={'/categoty/producto1'} > Producto 1 </Link>
-                <Link className='btn btn-success'to={'/categoty/producto2'} > Producto 2 </Link>
-                <Link className='btn btn-warning'to={'/categoty/producto3'} > Producto 3 </Link>
-                <Link className='btn btn-success'to={'/categoty/producto4'} > Producto 4 </Link>
+                <Link className='btn btn-primary' to={'/category/producto1'} > Blancos </Link>
+                <Link className='btn btn-success'to={'/category/producto2'} > Rojos </Link>
+                <Link className='btn btn-warning'to={'/category/producto3'} > Verdes </Link>
+                <Link className='btn btn-success'to={'/category/producto4'} > Todos </Link>
             </section>
             <Carrito/>
         </nav>
