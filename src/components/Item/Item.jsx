@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom"
+
+
 export const Item = ({id, name, img ,category, price}) => {
     return(
         <article className="text-center">
@@ -5,7 +8,7 @@ export const Item = ({id, name, img ,category, price}) => {
             <img src={img} style={{width: 100}} />
             <p> {category} </p>
             <h2> Precio: ${price} </h2>
-            <button>Ver detalles</button>
+            <Link to={`/detail/${id}`} >Ver detalles</Link>
         </article>
     )
 }

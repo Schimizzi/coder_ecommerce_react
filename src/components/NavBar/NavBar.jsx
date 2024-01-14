@@ -1,14 +1,16 @@
 import classes from './NavBar.module.css';
 import {Carrito} from '../Carrito/Carrito';
+import { Link } from 'react-router-dom';
 
 export const NavBar = () => {
     return(
         <nav className='text-center' >
-            <h1 className= {classes.logo} >e-commerce</h1>
+            <Link className= {classes.logo} to={'/'}>e-commerce</Link>
             <section>
-                <button className='btn btn-primary' > Producto 1 </button>
-                <button className='btn btn-success'> Producto 2 </button>
-                <button className='btn btn-warning'> Producto 3 </button>
+                <Link className='btn btn-primary' to={'/categoty/producto1'} > Producto 1 </Link>
+                <Link className='btn btn-success'to={'/categoty/producto2'} > Producto 2 </Link>
+                <Link className='btn btn-warning'to={'/categoty/producto3'} > Producto 3 </Link>
+                <Link className='btn btn-success'to={'/categoty/producto4'} > Producto 4 </Link>
             </section>
             <Carrito/>
         </nav>

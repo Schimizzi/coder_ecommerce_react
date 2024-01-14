@@ -9,9 +9,9 @@ export const ItemListContainer = ({ greeting }) => {
         getProducts()
         .then(productos => {
             setProductos(productos)
-        .catch(error => {
+       /*  .catch(error => {
             console.error(error)
-        })
+        }) */
 
         })
         
