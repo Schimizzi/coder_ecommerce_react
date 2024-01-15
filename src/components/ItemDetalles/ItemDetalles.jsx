@@ -3,6 +3,7 @@ import { getProductsById } from "../asyncMock";
 import { useParams } from "react-router-dom";
 import { ContadorItem } from "../Contador/ContadorItem";
 
+
 export const ItemDetalles = () => {
     const [productos,  setProductos] = useState([])
 
@@ -20,6 +21,8 @@ export const ItemDetalles = () => {
             <h1> detalles del producto </h1>
             <h2> {productos?.name} </h2>
             <img src={productos?.img} style={{width: 300}} />
+            <p> {productos?.description} </p>
+            <h3> ${productos?.price} </h3>
             <ContadorItem inicial={0} stock={10} onAdd={(cantidad) => console.log(cantidad)} />
         </div>
     )

@@ -1,19 +1,12 @@
-const products = {
-    "info": {
-        "count": 826,
-        "pages": 42,
-        "next": "https://rickandmortyapi.com/api/character?page=2",
-        "prev": null
-    },
-    "results": [
+const products = [
         {
-            "id": 1,
-            "name": "Rick Sanchez",
-            "status": "Alive",
-            "species": "Human",
-            "type": "",
-            "gender": "Male",
-            "origin": {
+            id: 1,
+            name: "Rick Sanchez",
+            status: "Alive",
+            species: "Human",
+            type: "",
+            gender: "Male",
+            origin: {
                 "name": "Earth (C-137)",
                 "url": "https://rickandmortyapi.com/api/location/1"
             },
@@ -21,7 +14,7 @@ const products = {
                 "name": "Citadel of Ricks",
                 "url": "https://rickandmortyapi.com/api/location/3"
             },
-            "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
+            image: "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
             "episode": [
                 "https://rickandmortyapi.com/api/episode/1",
                 "https://rickandmortyapi.com/api/episode/2",
@@ -79,12 +72,12 @@ const products = {
             "created": "2017-11-04T18:48:46.250Z"
         },
         {
-            "id": 2,
-            "name": "Morty Smith",
+            id: 2,
+            name: "Morty Smith",
             "status": "Alive",
             "species": "Human",
             "type": "",
-            "gender": "Male",
+            gender: "Male",
             "origin": {
                 "name": "unknown",
                 "url": ""
@@ -93,7 +86,7 @@ const products = {
                 "name": "Citadel of Ricks",
                 "url": "https://rickandmortyapi.com/api/location/3"
             },
-            "image": "https://rickandmortyapi.com/api/character/avatar/2.jpeg",
+            image: "https://rickandmortyapi.com/api/character/avatar/2.jpeg",
             "episode": [
                 "https://rickandmortyapi.com/api/episode/1",
                 "https://rickandmortyapi.com/api/episode/2",
@@ -602,12 +595,12 @@ const products = {
             "created": "2017-11-04T22:21:24.481Z"
         },
         {
-            "id": 18,
-            "name": "Antenna Morty",
+            id: 18,
+            name: "Antenna Morty",
             "status": "Alive",
-            "species": "Human",
+            species: "Human",
             "type": "Human with antennae",
-            "gender": "Male",
+            gender: "Male",
             "origin": {
                 "name": "unknown",
                 "url": ""
@@ -669,13 +662,37 @@ const products = {
             "created": "2017-11-04T22:34:53.659Z"
         }
     ]
-}
 
 
-const getProducts = () => {
+   
+export const getProducts = () => {
     return new Promise((resolve) => {
         setTimeout(() => {
             resolve(products)
+        }, 1000)
+    })
+}
+
+export const getProductsById = (productId) => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(products.find(prod => prod.gender === productId))
+        }, 1000)
+    })
+}
+
+export const getProductsByCategory = (speciesId) => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(products.find(produ => produ.species === speciesId))
+        }, 1000)
+    })
+}
+
+export const getGenderById = (genderId) => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(products.find(prod => prod.gender === genderId))
         }, 1000)
     })
 }

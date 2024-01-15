@@ -1,39 +1,46 @@
 const products = [
     { 
         id: '1', 
-        name: 'iphone 11', 
+        name: 'Legion 9', 
         price: 11000, 
-        category: 'producto1', 
-        img:'https://itechstore.com.ar/wp-content/uploads/2020/06/iphone-12-pro-gold-hero-600x710.png', 
+        category: 'computadora', 
+        img:'https://s3-eu-west-1.amazonaws.com/rankia/images/valoraciones/0017/1391/computadora-mexico.png?1413792133', 
         stock: 25, 
-        description:'Descripcion de Iphone 11'
+        description:'Te presentamos la Lenovo Legion 9, un titán sin igual fabricada con carbono forjado a mano. Su sistema de refrigeración líquida Legion Coldfront y el chip de inteligencia artificial de última generación redefinen el gaming. Disfruta de la mejor relación potencia-peso en una laptop para gaming, una pantalla mini-LED PureSight y colores certificados por X-Rite y Pantone para obtener imágenes realistas. Para conocer nuestra visión de la laptop para gaming definitiva, no busques más.'
     },
     { 
         id: '2', 
-        name: 'iphone 12', 
+        name: 'Iphone 12', 
         price: 12000, 
-        category: 'producto2', 
+        category: 'celular', 
         img:'https://itechstore.com.ar/wp-content/uploads/2020/06/iphone-12-pro-gold-hero-600x710.png', 
         stock: 25, 
-        description:'Descripcion de Iphone 12'
+        description:`Super Retina XDR display 6.1‑inch (diagonal) all‑screen OLED display 2532‑by‑1170-pixel resolution at 460 ppi
+        True Tone display
+        A14 Bionic chip Next‑generation Neural Engine
+        Dual 12MP Ultra Wide and Wide cameras
+        4K video recording at 24 fps, 30 fps, or 60 fps
+        1080p HD video recording at 30 fps or 60 fps
+        720p HD video recording at 30 fps
+        Face ID
+        
+        Cellular and Wireless
+        5G (sub‑6 GHz)
+        Gigabit LTE with 4x4 MIMO and LAA
+        Wi‑Fi 6 (802.11ax) with 2x2 MIMO
+        Bluetooth 5.0 wireless technology
+        Ultra Wideband chip for spatial awareness
+        NFC with reader mode
+        Express Cards with power reserve`
     },
     { 
         id: '3', 
-        name: 'iphone 13', 
+        name: 'Galaxy S13', 
         price: 13000, 
-        category: 'producto3', 
-        img:'https://itechstore.com.ar/wp-content/uploads/2020/06/iphone-12-pro-gold-hero-600x710.png', 
+        category: 'tablet', 
+        img:'https://www.iunicus.net/upload/image/thumb/mythumb_700_700_20190815_13.jpg', 
         stock: 25, 
-        description:'Descripcion de Iphone 13'
-    },
-    { 
-        id: '4', 
-        name: 'iphone 14', 
-        price: 14000, 
-        category: 'producto4', 
-        img:'https://itechstore.com.ar/wp-content/uploads/2020/06/iphone-12-pro-gold-hero-600x710.png', 
-        stock: 25, 
-        description:'Descripcion de Iphone 14'
+        description:'Tablet 10.1 Inch Android 9.0 3G Phone Tablets with 2GB RAM+32GB ROM Dual Sim Card 2MP+ 5MP Camera, WiFi, Bluetooth, GPS, Quad Core, HD Touchscreen, Support 3G Phone Call (Black)'
     },
 
 ];
