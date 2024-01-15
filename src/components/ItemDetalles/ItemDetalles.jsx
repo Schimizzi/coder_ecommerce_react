@@ -18,7 +18,7 @@ export const ItemDetalles = () => {
 
     return (
         <div className="text-center">
-            <h1> detalles del producto </h1>
+            <h1> detalles del </h1>
             <h2> {productos?.name} </h2>
             <img src={productos?.img} style={{width: 300}} />
             <p> {productos?.description} </p>
