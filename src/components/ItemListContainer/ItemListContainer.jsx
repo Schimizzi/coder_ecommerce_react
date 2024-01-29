@@ -28,7 +28,7 @@ export const ItemListContainer = ({ greeting }) => {
                 setProductos(productFire)
             })
             .catch(error => {
-                console.log('error', 'Hubo un error')
+                console.log('Hubo un error')
             })
             .finally(() => {
                 setLoading(false)
