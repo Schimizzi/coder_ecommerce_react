@@ -5,13 +5,13 @@ import { Link } from 'react-router-dom';
 
 
 export const Carrito = () => {
-    const { cantidadTotal } = useCart()
+    const { elTotal } = useCart()
     return(
         <div>
             <Link to="/cart">
                 <img className= {classes.carritocss} src={florCarrito} alt='florCarrito'/>
             </Link>
-            {cantidadTotal} items
+            {elTotal} items
         </div>
     )
 };

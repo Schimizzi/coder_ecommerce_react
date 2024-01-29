@@ -14,6 +14,8 @@ export const ItemDetalles = () => {
     const handleOnAdd = () => {
         if (producto) {
             const objProductToAdd = {
+                cantidad: producto.cantidad,
+                id: producto.id,
                 stock: producto.stock,
                 price: producto.price,
                 name: producto.name,

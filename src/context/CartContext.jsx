@@ -3,9 +3,11 @@ import { useState, useContext, createContext } from "react"
 const CartContext = createContext({
   cart: [],
   addItems: () => {},
-  cantidadTotal: 0,
+  removeItems: () => {},
+  elTotal: 0,
   total: 0,
   limpiarCarrito: () => {}
+
 })
 
 
@@ -37,19 +39,26 @@ export const CartProvider = ({children}) => {
       })
       return accu
     }
+    console.log(tomarElTotal())
+    
+    const getTotal = () => {
+      return tomarElTotal()
+    }
 
     const elTotal = tomarElTotal()
-    const getTotal = () => {
-
-    }
     const total = getTotal()
 
     const limpiarCarrito = () => {
       setCart([])
     }
+   
     
+    
+
+
+
     return (
-        <CartContext.Provider value={{cart, addItems, removeItems}}>
+        <CartContext.Provider value={{cart, addItems, removeItems, elTotal, total, limpiarCarrito}}>
             { children }
         </CartContext.Provider>
 
