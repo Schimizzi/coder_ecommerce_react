@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 
 
-export const Item = ({id, name, img ,category, price}) => {
+export const Item = ({id, name, img, price}) => {
     return(
         <article className="text-center m-5">
             <h3 className="text-secondary" > {name} </h3>

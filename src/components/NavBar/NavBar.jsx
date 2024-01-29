@@ -11,7 +11,7 @@ export const NavBar = () => {
                 <Link className='btn btn-success'to={'/category/computadora'} > computadora </Link>
                 <Link className='btn btn-warning'to={'/category/tablet'} > tablet </Link>
             </section>
-            <Carrito/>
+            <Carrito />
         </nav>
     )
 };

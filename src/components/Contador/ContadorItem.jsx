@@ -1,10 +1,11 @@
 import { useState } from 'react';
 
-export const ContadorItem = ({ stock, inicial, onAdd }) => {
+export const ContadorItem = ({ stock, inicial = 1, onAdd }) => {
     const [cantidad, setCantidad] = useState(inicial)
-    const increment = () => {
+
+    const increment = () => {        
         if(cantidad < stock){
-            setCantidad(cantidad +1)
+            setCantidad(prev => prev +1)
         }
     }
 

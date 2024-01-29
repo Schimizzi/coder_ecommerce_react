@@ -18,7 +18,7 @@ export const ItemListContainer = ({ greeting }) => {
 
         })
         
-    }, [])
+    }, [categoryId])
     return (
         <>
             <h2 className='text-center'> {greeting} </h2>

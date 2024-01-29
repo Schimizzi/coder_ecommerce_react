@@ -4,8 +4,8 @@ const products = [
         name: 'Legion 9', 
         price: 11000, 
         category: 'computadora', 
-        img:'https://s3-eu-west-1.amazonaws.com/rankia/images/valoraciones/0017/1391/computadora-mexico.png?1413792133', 
-        stock: 25, 
+        img:'../public/img/computadora.png', 
+        stock: 15, 
         description:'Te presentamos la Lenovo Legion 9, un titán sin igual fabricada con carbono forjado a mano. Su sistema de refrigeración líquida Legion Coldfront y el chip de inteligencia artificial de última generación redefinen el gaming. Disfruta de la mejor relación potencia-peso en una laptop para gaming, una pantalla mini-LED PureSight y colores certificados por X-Rite y Pantone para obtener imágenes realistas. Para conocer nuestra visión de la laptop para gaming definitiva, no busques más.'
     },
     { 
@@ -13,8 +13,8 @@ const products = [
         name: 'Iphone 12', 
         price: 12000, 
         category: 'celular', 
-        img:'https://itechstore.com.ar/wp-content/uploads/2020/06/iphone-12-pro-gold-hero-600x710.png', 
-        stock: 25, 
+        img:'../public/img/celular.jpeg', 
+        stock: 5, 
         description:`Super Retina XDR display 6.1‑inch (diagonal) all‑screen OLED display 2532‑by‑1170-pixel resolution at 460 ppi
         True Tone display
         A14 Bionic chip Next‑generation Neural Engine
@@ -38,7 +38,7 @@ const products = [
         name: 'Galaxy S13', 
         price: 13000, 
         category: 'tablet', 
-        img:'https://www.iunicus.net/upload/image/thumb/mythumb_700_700_20190815_13.jpg', 
+        img:'../public/img/tablet.png', 
         stock: 25, 
         description:'Tablet 10.1 Inch Android 9.0 3G Phone Tablets with 2GB RAM+32GB ROM Dual Sim Card 2MP+ 5MP Camera, WiFi, Bluetooth, GPS, Quad Core, HD Touchscreen, Support 3G Phone Call (Black)'
     },
